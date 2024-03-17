@@ -2,7 +2,7 @@ import React from "react";
 
 function FormLandingPage(props){
     return(
-        <div >
+        <div>
             <form >
                 <label style={Styles.label}>{props.label}</label><br/>
                 <input style={Styles.input} placeholder={props.placeholder} /><br/>
@@ -13,14 +13,15 @@ function FormLandingPage(props){
 
 const Styles={
     label:{
-        fontSize:'24px',
-        padding:'15px',
+        fontSize:'1.5em',
+        marginLeft:'0.75em',
     },
     input:{
-        padding: '10px',
-        margin: '15px 0 30px',
-        fontSize:'18px',
-        width: '100%'
+        padding: '0.35em',
+        marginTop: '0.5em',
+        marginBottom: '1.5em',
+        fontSize:'1.25em',
+        width: '97%'
     }
 }
 

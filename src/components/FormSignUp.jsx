@@ -27,17 +27,33 @@ const listForm = [
     }
 ]
 
-function FormSignUp(){
+function FormSignUp({triggerEvent}){
+    const handleClick = () => {
+        triggerEvent(1);
+      };
     return(
-        <div>
+        <div style={Styles.container}>
             {listForm.map(form=>{
                 return <FormLandingPage label={form.label} placeholder={form.placeholder} />
             })}
-            <ButtonLandingPage mode="dark"/>
-            <ButtonLandingPage mode="light"/>
-            <p>Sudah punya aku ? <a href="#">Masuk</a></p>
+            <ButtonLandingPage mode="dark" name="Daftar"/>
+            <ButtonLandingPage mode="light" name="Daftar dengan Google"/>
+            <p style={Styles.bottom}>Sudah punya aku ? <a href='#' onClick={handleClick}>Masuk</a></p>
         </div>
     )
+}
+
+const Styles ={
+    container:{
+        padding: '1.25em 2em',
+        border:'0.1em solid #80DCF9',
+        borderRadius: '0 0 1em 1em'
+    },
+    bottom:{
+        fontSize:'1.25em',
+        margin: '0.5em 0',
+        textAlign:'center',
+    },
 }
 
 export default FormSignUp;

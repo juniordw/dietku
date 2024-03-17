@@ -15,19 +15,20 @@ function ButtonLandingPage(props) {
       style={buttonStyle}
       type="button"
     >
-      Click Me!
+      {props.name}
     </button>
   );
 }
 
 const Styles = {
   default: {
-    padding: '20px 0',
+    margin:'1em 0',
+    padding: '1em 0',
     width: '100%',
-    fontSize: '18px',
+    fontSize: '1.25em',
     fontWeight: 'bold',
     border: 'none',
-    borderRadius: '20px',
+    borderRadius: '1em',
   },
   dark: {
     color: '#fff',
