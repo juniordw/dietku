@@ -1,4 +1,3 @@
-import React from "react";
 import FormLandingPage from "./FormLandingPage";
 import ButtonLandingPage from "./ButtonLandingPage";
 

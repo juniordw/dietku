@@ -1,5 +1,4 @@
-import React from "react";
-import image from '../assets/Logo Dietku.png'
+import image from "../../assets/Logo Dietku.png";
 import TabLandingPage from "./TabLandingPage";
 
 function LandingPage(){
@@ -27,8 +26,7 @@ const Styles={
         width: '30%',
         position: 'fixed',
         display: 'flex',
-        padding: '6%',
-
+        padding: '15% 6% 6%',
     }
 }
 
